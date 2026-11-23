@@ -14,7 +14,7 @@ The joke: you tell your AI agent to "follow up with the client" — and it takes
 node main.ts
 ```
 
-`main.ts` runs `draw.py` (Python 3 + PIL, no network, fully deterministic) and writes the 1024×1024 PNG to `/output/entry.png`.
+`main.ts` is pure Node.js (stdlib only — its own rasterizer and PNG encoder, no child processes, no network, fully deterministic) and writes the 1024×1024 PNG to `/output/entry.png`.
 
 ---
 
